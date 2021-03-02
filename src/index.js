@@ -44,7 +44,7 @@ function fetchToys(){
 //COMPLETED 'fetch andys toys'
 
 
-
+///POST
 function postToys(toy){
   fetch('http://localhost:3000/toys',{
   method: 'POST',
@@ -65,7 +65,7 @@ function postToys(toy){
 //our handler submit
 //we pass in our buildCard function and pass in 1 toy
 
-
+///PATCH
 function updateToy(toy){
   toy.likes++
 
@@ -148,8 +148,6 @@ function buildCard(toy){
   //we then added a event listener with a click function
   //and then called the deleteToy function from there and passed
   //in just the toy id instead of the whole toy.
-
-
   div.append(h2,img,p,btn, deleteBtn)//.apend to do multiple items
   toyCollection.appendChild(div)//.apendChild for one
 }
@@ -192,8 +190,8 @@ function handlerSubmit(e){
   }
   postToys(toy)
 }
-//e.preventDefault()
-//this prevents it from refreshing everytime we submit 
+//e.preventDefault() to prevent from refreshing
+//create a toy object 
 //we do e.target to grab the entire form
 //we the do e.target.name to grab the name and .value 
 //to get the value of that 'name'

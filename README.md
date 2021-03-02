@@ -43,7 +43,7 @@ After all of that, the toy card should resemble:
   </div>
 ```
 
-## Add a New Toy
+## Add a New Toy [x]
 
 * When a user submits the toy form, a `POST` request is sent to `http://localhost:3000/toys` and the new toy is added to Andy's Toy Collection.
 * The toy should conditionally render to the page.
